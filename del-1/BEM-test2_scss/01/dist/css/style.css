@@ -1,0 +1,24 @@
+/*---------------------------------------------------
+HEADING
+----------------------------------------------------*/
+.bilmaerker {
+  border: 1px solid green;
+}
+
+.bilmaerke {
+  background-color: cadetblue;
+}
+.bilmaerke__navn {
+  border-radius: 5px;
+}
+.bilmaerke__land {
+  background-color: yellow;
+}
+.bilmaerke__land--japansk:hover {
+  background-color: red;
+}
+
+/* SUBHEADING
+------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+@import 'bemskel.css';
+
+h1 {
+    background-color: aqua;
+}
+
+.deletebutton {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.deletebutton:hover {
+    opacity: .5;
+}
+
+.deletebutton--succes {
+    background-color: green;
+}

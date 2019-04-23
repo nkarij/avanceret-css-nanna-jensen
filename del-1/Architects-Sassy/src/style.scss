@@ -1,0 +1,71 @@
+@import 'bemskel';
+@import 'mixins';
+@import 'variables';
+@import 'reset';
+
+
+body {
+    background-color: $base-color;
+}
+
+header {
+    background-color: $primary-color;
+    h1{
+        text-align: center;
+    }
+}
+
+#menu, #foldout {
+    display: none;
+}
+
+
+main {
+    section {
+        padding: 2rem;
+    }
+}
+
+
+
+
+nav{
+    height: (100vh/ 10);
+    background-color: $secondary-color;
+    @include mediaQuery(600px){
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        // justify-content: space-evenly;
+        margin: 0;
+        @include fill-parent();
+        @include mediaQuery(600px){
+            display: block;
+        }
+    }
+    li{
+        display: table;
+        @include list-decoration();
+        @include fill-parent();
+    }
+    a{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        @include link-decoration();
+        @include fill-parent();
+    }
+}
+
+.home-article {
+    padding: 0;
+    article {
+        // 
+        img {
+            @include fit-image(cover);
+        }
+    }
+
+}

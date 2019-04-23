@@ -1,0 +1,32 @@
+/* HTML REFERENCE FONT
+------------------------------------*/
+html {
+    font-size: 2vw;
+    /* all other referring fonts in rem */
+}
+
+/* LINKS
+------------------------------------*/
+
+.no-deco { 
+    text-decoration: none;
+    color: black;
+}
+
+/* FA FA ICONS
+------------------------------------*/
+
+/* horisontal alignment on parent */
+
+.icon-parent {
+    display: block; /*needs to be a block/inline-block element */
+    line-height: 2rem; /*needs to be same line-height as height */
+    text-align: center;
+}
+
+/* vertical alignment on child */
+.icon-align-v {
+    display: inline-block;
+    vertical-align: middle; 
+} 
+

@@ -1,0 +1,34 @@
+/*---------------------------------------------------
+HEADING
+----------------------------------------------------*/
+// TEST COMPILATION TO DIST/CSS
+// body {
+//     color: white;
+// }
+
+.bilmaerker {
+    border: 1px solid green;
+}
+
+.bilmaerke {
+    background-color: cadetblue;
+
+    &__navn {
+        border-radius: 5px;
+    }
+
+    &__land {
+        background-color: yellow;
+
+        &--japansk:hover {
+            background-color: red;
+        }
+    }
+}
+
+
+
+
+
+/* SUBHEADING
+------------------------------------*/

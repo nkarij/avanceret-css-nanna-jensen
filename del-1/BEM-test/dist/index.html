@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" >
+    <title>Webpack med Babel og Sass loader og BEMSkel framework</title>
+</head>
+<body>
+    <!-- 
+          Block = person
+        __Element = person__fornavn
+        --Modifier = person--admin / person__fornavn--flot
+     -->
+
+    <h1>BEM Navnekonvention</h1>
+    <div class="person">
+        <div class="person__fornavn">Nanna</div>
+        <div class="person__efternavn">Jensen</div>
+        <div class="person__alder">39</div>
+    </div>
+
+    <div class="person person--admin">
+        <div class="person__fornavn">Nanna</div>
+        <div class="person__efternavn">Jensen</div>
+        <div class="person__alder">39</div>
+    </div>
+
+    <!-- 
+    .deletebutton {
+        padding: 8px 12px;
+        border-radius: 5px;
+        background-color: red;
+    }
+
+    .deletebutton:hover {
+        opacity: .5;
+    }
+
+    .deletebutton--succes {
+        background-color: green;
+    }
+     -->
+    <button class="deletebutton">Slet Fil</button>
+
+    <button class="deletebutton deletebutton--succes">Succes</button>
+
+    <!-- Øvelse -->
+    <section class="hold">
+        <h1 class="hold__navn">WUHF01</h1>
+        <div class="elev">
+            <div class="elev__navn">Mickey Mouse</div>
+            <div class="elev__by">Roskilde</div>
+        </div>
+        <div class="elev">
+            <div class="elev__navn">Donald Duck</div>
+            <div class="elev__by">København</div>
+        </div>
+    </section>
+
+    <section class="hold">
+        <h2 class="hold__navn">DM02</h2>
+        <div class="elev elev--ambassadoer">
+            <div class="elev__navn">Goofy</div>
+            <div class="elev__by">Odense</div>
+        </div>
+        <div class="elev">
+            <div class="elev__navn">Daffy Duck</div>
+            <div class="elev__by">Århus</div>
+        </div>
+    </section>
+
+
+    <!-- div.hold
+    WUHF01
+    div.elev
+        div.elev_fornav 
+        Mickey Mouse
+        Roskilde
+    elev
+        Donald Duck
+        København
+        
+    hold
+    DM-01
+    elev
+        Goofy
+        Odense
+    elev
+        Daffy Duck
+        Århus -->
+
+    <!-- <script src="bundle.js"></script> -->
+</body>
+</html>

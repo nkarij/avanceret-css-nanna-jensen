@@ -1,16 +1,16 @@
 // alert("test");
 
 
-// ref hsl values
+// global variables
 // let hslValue;
 let testColorElement = document.querySelector("#testcolor");
 let slidesContainer = document.querySelector(".slidecontainer");
 let sliderInputArray = document.querySelectorAll(".slidecontainer input");
 let valueArray = [];
 
-slidesContainer.addEventListener('change', handler);
+slidesContainer.addEventListener('input', getValueFromInput);
 
-function handler(){
+function getValueFromInput(){
     sliderInputArray.forEach(slider =>{
         valueArray.push(slider.value);
     })

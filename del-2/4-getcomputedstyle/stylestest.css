@@ -1,0 +1,45 @@
+:root {
+	--chosen-color: white;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#color-buttons button {
+	margin-bottom: 20px;
+	height: 30px;
+	width: 30px;
+	font-size: 13px;
+	border: 1px solid #888;
+}
+
+#color-button-1 {
+    background-color: red;
+}
+
+#color-button-2 {
+    background-color: green;
+}
+
+#color-button-3 {
+    background-color: blue;
+}
+
+#chosen-color-instance-1 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #888;
+	background-color: var(--chosen-color);
+	margin-bottom: 20px;
+}
+
+#chosen-color-instance-2 {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #888;
+	background-color: var(--chosen-color);
+}
+

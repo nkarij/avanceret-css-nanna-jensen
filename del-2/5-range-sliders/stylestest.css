@@ -7,6 +7,10 @@
 	margin: 0px;
 }
 
+body {
+	padding: 20px;
+}
+
 #testcolor {
 	width: 180px;
 	height: 180px;

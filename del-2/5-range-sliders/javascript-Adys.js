@@ -26,4 +26,5 @@ function updateHSLValue(){
     let lightValue = lightSliderElement.value;
     hslValue = `hsl(${hueValue}, ${satValue}%, ${lightValue}%)`;
     document.documentElement.style.setProperty('--chosen-color', hslValue);
+    document.querySelector("#display-HSLvalue").innerHTML = hslValue;
 }

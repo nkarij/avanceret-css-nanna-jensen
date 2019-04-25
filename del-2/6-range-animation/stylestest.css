@@ -5,22 +5,85 @@ TABLE OF CONTENT
 /* STYLES
 ------------------------------------*/
 
+/* ADYS VERSION */
 :root {
-    --main-bg-color: red;
-    /* --color-1: blue; */
-    /* --slider modtager en variabel værdi fra rangeslider via JS */
     --slider: 0;
-    /* --add tilføjer en enhed til sliderens variable værdi, fx 1% eller 1px   */
-    --add: calc(var(--slider) * 3px);
-    /* margin-small og large styrer placeringen af boxene på siden */
-    --margin-small: 100px;
-    --margin-large: 400px;
-    --div1: var(--add);
-    --div2: calc(var(--margin-small) + var(--add));
-    --div3: calc(var(--margin-large) - var(--margin-small) - var(--add));
-    --div4: calc(var(--margin-large) - var(--add));
+    --distance: 200px;
 }
 
+#sliderlabel {
+    position: fixed;
+    top: 400px;
+    left: 0;
+}
+
+#sliderdistancelabel {
+    position: fixed;
+    top: 500px;
+    left: 0;
+}
+
+#slider {
+    position: fixed;
+    top: 400px;
+    left: 100px;
+}
+
+#sliderdistance {
+    position: fixed;
+    top: 500px;
+    left: 100px;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+}
+
+#div1 {
+    background-color: blue;
+    top: 0;
+    left: calc(var(--distance) * var(--slider));
+}
+
+#div2 {
+    background-color: red;
+    left: var(--distance);
+    top: calc(var(--distance) * var(--slider));
+}
+
+#div3 {
+    background-color: yellow;
+    top: var(--distance);
+    left: calc(var(--distance) - var(--distance) * var(--slider));
+}
+
+#div4 {
+    background-color: green;
+    top: calc(var(--distance) - var(--distance) * var(--slider));
+    left: 0;
+}
+
+/* NANNAS VERSION */
+/* :root { */
+    /* --main-bg-color: red; */
+    /* --color-1: blue; */
+    /* --slider modtager en variabel værdi fra rangeslider via JS */
+    /* --slider: 0; */
+    /* --add tilføjer en enhed til sliderens variable værdi, fx 1% eller 1px   */
+    /* --add: calc(var(--slider) * 3px); */
+    /* margin-small og large styrer placeringen af boxene på siden */
+    /* --margin-small: 100px; */
+    /* --margin-large: 400px; */
+    /* --div1: var(--add); */
+    /* --div2: calc(var(--margin-small) + var(--add));
+    --div3: calc(var(--margin-large) - var(--margin-small) - var(--add));
+    --div4: calc(var(--margin-large) - var(--add)); */
+/* } */
+
+
+/* 
 #div1 {
     background-color: var(--main-bg-color); 
     width: 50px;
@@ -54,7 +117,9 @@ TABLE OF CONTENT
     height: 50px;
     position: fixed;
     top: var(--div4);
-}
+} */
+
+
 
 
 

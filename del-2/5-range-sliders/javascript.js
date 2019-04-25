@@ -11,7 +11,8 @@ let hueSliderElement = document.querySelector("#hueslider");
 let satSliderElement = document.querySelector('#satslider');
 let lightSliderElement = document.querySelector('#lightslider');
 // ref color test-element
-let testColorElement = document.querySelector("#testcolor");
+// let testColorElement = document.querySelector("#testcolor");
+let root = document.documentElement;
 
 // ref hsl values
 let hslValue;

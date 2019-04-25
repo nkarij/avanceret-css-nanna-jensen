@@ -1,0 +1,66 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --main-bg-color: red;
+    /* --color-1: blue; */
+    /* --slider modtager en variabel værdi fra rangeslider via JS */
+    --slider: 0;
+    /* --add tilføjer en enhed til sliderens variable værdi, fx 1% eller 1px   */
+    --add: calc(var(--slider) * 3px);
+    /* margin-small og large styrer placeringen af boxene på siden */
+    --margin-small: 100px;
+    --margin-large: 400px;
+    --div1: var(--add);
+    --div2: calc(var(--margin-small) + var(--add));
+    --div3: calc(var(--margin-large) - var(--margin-small) - var(--add));
+    --div4: calc(var(--margin-large) - var(--add));
+}
+
+#div1 {
+    background-color: var(--main-bg-color); 
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: var(--margin-small);
+    left: var(--div1);
+}
+
+#div2 {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: var(--div2);
+    left: calc(var(--margin-large) - var(--margin-small));
+}
+
+#div3 {
+    background-color: magenta;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: var(--margin-large);
+    left: var(--div3);
+}
+
+#div4 {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: var(--div4);
+}
+
+
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/

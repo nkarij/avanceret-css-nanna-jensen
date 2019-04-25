@@ -3,8 +3,9 @@
 
 // global variables
 // let hslValue;
-let testColorElement = document.querySelector("#testcolor");
+
 let slidesContainer = document.querySelector(".slidecontainer");
+// array af inputs
 let sliderInputArray = document.querySelectorAll(".slidecontainer input");
 let hslValueArray = [];
 
@@ -19,8 +20,9 @@ function getValueFromInput(){
 
 function outputHSLValues(){
     let hslValue = `hsl(${hslValueArray[0]}, ${hslValueArray[1]}%, ${hslValueArray[2]}%)`;
-    console.log(hslValue);
-    testColorElement.style.backgroundColor = hslValue;
+    // console.log(hslValue);
+    document.documentElement.style.setProperty('--chosen-color', hslValue);
+    // testColorElement.style.backgroundColor = hslValue;
     hslValueArray = [];
 }
 

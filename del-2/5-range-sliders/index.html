@@ -7,16 +7,24 @@
 	<link rel="stylesheet" href="stylestest.css">
 	<title>Opg 03 - Avanceret CSS Del 2</title>
 </head>
+
 <body>
 
 	<div class="slidecontainer">
-		<input type="range" min="0" max="360" value="180" class="slider" id="hueslider">
-		<input type="range" min="0" max="100" value="100" class="slider" id="satslider">
-		<input type="range" min="0" max="100" value="50" class="slider" id="lightslider">
+		<label for="hueslider">Hue</label>
+		<input name="hueslider" type="range" min="0" max="360" value="0" class="slider" id="hueslider">
+		<label for="satslider">Saturation</label>
+		<input name="satslider" type="range" min="0" max="100" value="100" class="slider" id="satslider">
+		<label for="lightslider">Lightness</label>
+		<input name="lightslider" type="range" min="0" max="100" value="50" class="slider" id="lightslider">
 	</div>
+
 	<div id="testcolor"></div>
 
 	<!-- <script src="javascript.js"></script> -->
-	<script src="javascript-test.js"></script>
+	<!-- <script src="javascript-test.js"></script> -->
+	<script src="javascript-Adys.js"></script>
+	
+
 </body>
 </html>

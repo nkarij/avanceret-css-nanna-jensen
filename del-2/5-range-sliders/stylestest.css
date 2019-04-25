@@ -10,7 +10,7 @@
 #testcolor {
 	width: 180px;
 	height: 180px;
-	background-color: yellow;
+	background-color: var(--chosen-color);
 }
 
 

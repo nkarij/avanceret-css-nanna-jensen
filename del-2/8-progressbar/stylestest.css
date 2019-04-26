@@ -1,0 +1,42 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --value: 0;
+    /* --progress: var(--value); */
+}
+
+/* style the elements size */
+progress {
+    height: 20px;
+    width: 250px;
+    display: block;
+    /* resets the default progress css */
+    -webkit-appearance: none;
+    border: none;
+    background-color: antiquewhite;
+}
+
+/* style the background */
+progress[value]::-webkit-progress-bar {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/* pas på med ikke at bruge pseudoclass progress-inner-value her,  */
+progress[value]::-webkit-progress-value {
+    background: blue;
+    /* background-image: linear-gradient(to right, #1767de, #009bff, #00c1db, #00dd85, #a8eb12); */
+    border-radius: 5px;
+}
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/

@@ -3,6 +3,8 @@ TABLE OF CONTENT
 ----------------------------------------------------*/
 document.addEventListener('DOMContentLoaded', function(){
     // alert("hej");
+
+    // Opgave: en progressbar som starter når man scroller ned så den kan ses i viewport
     
     let index = 0;
     let progressBarElement = document.querySelector("#progressbar");

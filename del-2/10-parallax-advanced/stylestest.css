@@ -1,0 +1,53 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --main-bg-color: rgb(42, 105, 81); 
+    --change-color: red;
+}
+
+#body {
+    height: 300vh; 
+    width: 100%;
+}
+
+.top-box {
+    height: 200px;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.header {
+    height: 500px;
+    position: relative;
+}
+
+.heading {
+    height: 100px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: magenta;    
+}
+
+#parallaxelement {
+    /* her må man IKKE bruge background attachment, så dur parallaxen ikke. */
+    height: 100%;
+    background: url(../../IMG/food/frokost-big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/

@@ -4,19 +4,23 @@ TABLE OF CONTENT
 document.addEventListener('DOMContentLoaded', function(){
     // alert("hej");
 
-    // Opgave: en progressbar som starter når man scroller ned så den kan ses i viewport
+// Opgave: en progressbar som starter når man scroller ned så den kan ses i viewport
     
     let index = 0;
     let progressBarElement = document.querySelector("#progressbar");
     progressBarElement.value = 0;
+    let interval = null;
 
     // en function som kører når progressbar kommer inden for synsvidde.
+    
+    if(interval == null){
+        document.addEventListener('scroll', function(){
+            if(inViewPort(progressBarElement)){ 
+                startTimer();
+            }
+        });
+    }
 
-    document.addEventListener('scroll', function(){
-        if(inViewPort(progressBarElement)){ 
-            startTimer();
-        }
-    });
 
     function inViewPort(element){
         // giver mig elementets koordinater/position:

@@ -1,0 +1,92 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --main-bg-color: rgb(42, 105, 81); 
+    --change-color: red;
+}
+
+.body {
+	position: relative;
+}
+
+.picturewrap {
+    height: 200px;
+    width: 100%;
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pagewrapper {
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+
+/* -------------- CLASSES ------------------- */
+
+
+
+/* vigtigt at den tager alle underside */
+.collapse > * {
+	/* display: none; */
+	opacity: 0;
+	transition: none;
+	height: 0px;
+}
+
+/* skjuler siderne */
+.fade-out {
+    opacity: 0;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 2s;
+}
+
+/* This displays the page corresponding to the one you clicked on */
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+/* fade in animation */
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* fade out animation */
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0;
+	}
+} 
+
+
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/

@@ -9,14 +9,19 @@ TABLE OF CONTENT
     --main-bg-color: coral;
 }
 
-#div1 {
-    background-color: var(--main-bg-color); 
+#main
+{
+    padding:5px;
 }
 
-#div2 {
-    background-color: var(--main-bg-color);
+#main .content
+{
+    display:none;   
 }
 
+.nav-item .active {
+    color: blue;
+}
 
 
 

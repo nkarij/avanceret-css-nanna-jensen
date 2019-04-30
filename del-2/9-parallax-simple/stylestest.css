@@ -1,0 +1,44 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --main-bg-color: rgb(42, 105, 81); 
+    --change-color: red;
+}
+
+
+.heading {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: white;
+}
+
+#parallaxelement {
+    height: 300px;
+    width: 100%;
+    background: url(../../IMG/food/frokost-big.jpg);
+    background-attachment: fixed;
+}
+
+.picture-container {
+    height: 600px;
+    width: 100%;  
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/

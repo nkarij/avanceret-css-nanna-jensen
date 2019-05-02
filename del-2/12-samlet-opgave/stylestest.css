@@ -105,10 +105,10 @@ body {
 }
 
 
-/* opgave 5 */
+
 
 /* ------------------------------------------------------------------------ */
-/* NB DETTE ER PARENT CONTAINER FOR DE NÆSTE MANGE SEKTIONER */
+/* NB PAGE-DIVIDE ER PARENT CONTAINER FOR DE NÆSTE MANGE SEKTIONER */
 /* DEN STYRER RÆKKEFØLGEN PÅ SIDEN MED POSITION. IKKE SÆRLIG SMART... */
 /* NÅR JEG FÅR TID BØR JEG LAVE EN FUNKTION SOM SELV KAN UDREGNE */
 /* HVOR NÆSTE SEKTION AF SIDEN STARTER */
@@ -139,8 +139,9 @@ body {
     top: 3500px;
 }
 
+/* opgave 5 */
 /* NB I MIN EGEN VERSION VAR DER IKKE NOGEN DISTANCE SLIDER */
-/* DENNE ER KOMMET TIL I ADYS VERSION */
+/* DENNE ER KOMMET TIL I ADYS VERSION, SE MAPPEN */
 
 #distance-slider, #sliderdistancelabel {
     display: none;

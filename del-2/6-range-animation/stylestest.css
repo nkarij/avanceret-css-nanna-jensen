@@ -23,43 +23,43 @@ TABLE OF CONTENT
     left: 0;
 }
 
-#slider {
+#animaiton-slider {
     position: fixed;
     top: 400px;
     left: 100px;
 }
 
-#sliderdistance {
+#distance-slider {
     position: fixed;
     top: 500px;
     left: 100px;
 }
 
-div {
+#animation-box-container {
     width: 50px;
     height: 50px;
     position: fixed;
 }
 
-#div1 {
+#animation-box-1 {
     background-color: blue;
     top: 0;
     left: calc(var(--distance) * var(--slider));
 }
 
-#div2 {
+#animation-box-2 {
     background-color: red;
     left: var(--distance);
     top: calc(var(--distance) * var(--slider));
 }
 
-#div3 {
+#animation-box-3 {
     background-color: yellow;
     top: var(--distance);
     left: calc(var(--distance) - var(--distance) * var(--slider));
 }
 
-#div4 {
+#animation-box-4 {
     background-color: green;
     top: calc(var(--distance) - var(--distance) * var(--slider));
     left: 0;

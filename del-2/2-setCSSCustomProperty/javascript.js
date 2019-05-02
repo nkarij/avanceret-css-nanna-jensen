@@ -3,10 +3,12 @@ TABLE OF CONTENT
 ----------------------------------------------------*/
 // alert("hej");
 
-let buttonSmall = document.querySelector(".button-small");
-let buttonLarge = document.querySelector(".button-large");
+let buttonSmallText = document.querySelector(".button-small");
+let buttonLargeText = document.querySelector(".button-large");
+// get root-element
+let root = document.documentElement;
 
-buttonSmall.addEventListener('click', function(){
+buttonSmallText.addEventListener('click', function(){
 
     // get root-element
     let root = document.documentElement;
@@ -14,13 +16,9 @@ buttonSmall.addEventListener('click', function(){
     // change css custom-property/css-variable 
     root.style.setProperty('--font-size', 'var(--font-normal)');
 
-
 });
 
-buttonLarge.addEventListener('click', function(){
-
-    // get root-element
-    let root = document.documentElement;
+buttonLargeText.addEventListener('click', function(){
 
     // change css custom-property/css-variable 
     root.style.setProperty('--font-size', 'var(--font-large)');

@@ -10,7 +10,82 @@
 </head>
 <body>
 
-    <section class="progressbar-section">
+    <h1 class="h1">ALLE OPGAVERNE SAMLET</h1>
+
+    <!-- ------ OPGAVE 1--------- -->
+    <h2 class="h2">SKIFT FARVE PÅ DIV</h2>
+    <div id="change-color-div__div">div 1</div>
+    <div id="div2">div 2</div>
+    <button id="change-color-div__button">Tryk</button>
+
+    <!-- -------- OPGAVE 2 ------- -->
+    <h2 class="h2">SKIFT TEKSTSTØRRELSER</h2>
+    <button class="button-small-text">lille tekst</button>
+    <button class="button-large-text">stor tekst</button>
+    <p id="font-size-test-element">Test</p>
+
+    <!-- -------- OPGAVE 3 ------- -->
+    <h2 class="h2">SKIFT FARVE PÅ KASSER</h2>
+	<div id="color-buttons">
+		<button id="color-button-1"></button>
+		<button id="color-button-2"></button>
+		<button id="color-button-3"></button>
+	</div>
+	<div id="chosen-color-instance-1"></div>
+    <div id="chosen-color-instance-2"></div>
+    
+     <!-- -------- OPGAVE 4 ------- -->
+     <h2 class="h2">SKIFT FARVE VHA RANGE SLIDERS</h2>
+	<br>
+	<br>
+	<div class="color-slidecontainer">
+		<label for="hueslider">Hue</label>
+		<input name="hueslider" type="range" min="0" max="360" value="50" class="slider" id="hueslider">
+		<label for="satslider">Saturation</label>
+		<input name="satslider" type="range" min="0" max="100" value="50" class="slider" id="satslider">
+		<label for="lightslider">Lightness</label>
+		<input name="lightslider" type="range" min="0" max="100" value="50" class="slider" id="lightslider">
+	</div>
+	<br>
+	<br>
+	<p id="display-HSLvalue"></p>
+	<br>
+    <div id="testcolor"></div>
+
+     <!-- -------- OPGAVE 5 ------- -->
+
+     <div id="page-divide-1">
+
+        <h2 class="h2">ANIMER 4 KASSER VHA RANGESLIDER</h2>
+        <!-- <input type="range" min="0" max="100" value="0" name="slider" id="slider"> -->
+        <div id="animation-box-container">
+            <div id="animation-box-1">div 1</div>
+            <div id="animation-box-2">div 2</div>
+            <div id="animation-box-3">div 3</div>
+            <div id="animation-box-4">div 4</div>
+        </div>
+
+    
+        <label id="sliderlabel" for="animationslider">Animate</label>
+        <input type="range" min="1" max="100" value="0" name="animationslider" id="animation-slider">
+        <label id="sliderdistancelabel" for="distanceslider">Distance</label>
+        <input type="range" min="1" max="300" value="0" name="distanceslider" id="distance-slider">
+
+    
+    <!-- -------- OPGAVE 6 ------- -->
+    <!-- <h2 class="h2">SKUB BOKS TIL VENSTRE</h2> -->
+    <!-- jeg har uheldigvis overskrevet/mistet denne opgave -->
+    <!-- men her er pseudokode -->
+
+    <!-- 
+    box/badge skal ligge inden i en parent-html
+    position relative/absolute, skub det ud med margin minus.
+    position relative/absolute, left: margin-minus -->
+
+
+     <!-- -------- OPGAVE 7 ------- -->
+
+     <section id="progressbar-section">
 
         <h2 class="h2">PROGRESSBAR SOM FØRST STARTER ANIMATION NÅR MAN KAN SCROLLER NED SÅ DEN KAN SES</h2>
         
@@ -42,6 +117,57 @@
         <br>
 
     </section>  
+    
+
+    <!-- -------- OPGAVE 8 ------- -->
+
+    <section id="simpel-parallax-section">
+
+        <h2 class="h2">SIMPEL PARALLAX, FIXED BACKGROUND, SCROLLING CONTENT</h2>
+        
+        <div id="wrapper">
+            <h1 class="heading">Simpel Parallax</h1>
+            <div id="parallaxelement"></div>
+            <article class="article">
+                <h2 class="article-heading">Artikel</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam vero dolorum, cupiditate voluptatem minima doloremque quasi. Inventore blanditiis ut itaque eum, voluptatibus, temporibus impedit quidem aliquam ipsum at expedita.</p>
+            </article>
+            <div class="picture-container">
+                <img src="../../IMG/food/morgenmad-big.jpg" alt="" class="picture">
+            </div>
+        </div>
+
+    </section>
+
+     <!-- -------- OPGAVE 9 ------- -->
+
+     <section id="advanced-parallax">
+        
+        <H2 class="H2">PARALLAX ADVANCED</H2>
+        <div class="top-box"></div>
+            
+        <header class="header">
+            <div id="parallaxelement">
+                <h1 class="heading"> Avanceret Parallax</h1>
+            </div>
+        </header>
+    
+        <article class="article">
+            <h2 class="article-heading">Artikel</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam vero dolorum, cupiditate voluptatem minima doloremque quasi. Inventore blanditiis ut itaque eum, voluptatibus, temporibus impedit quidem aliquam ipsum at expedita.</p>
+        </article>
+
+    </section>
+     <!-- -------- OPGAVE 10 ------- -->
+
+     <section id="single-page-app">
+
+        <H2 class="H2">OPGAVE 10 ER SINGLE PAGE APP, DEN HAR SIN EGEN MAPPE</H2>
+        
+        <!-- PAGE-DIVIDE SLUTTER -->
+        </div>
+
+    </section>
 
     <script src="javascript.js"></script>
 </body>

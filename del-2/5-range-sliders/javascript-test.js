@@ -7,7 +7,8 @@
 let slidesContainer = document.querySelector(".slidecontainer");
 // array af inputs
 let sliderInputArray = document.querySelectorAll(".slidecontainer input");
-let hslValueArray = [];
+let hslValueArray = [50, 100, 50];
+outputHSLValues();
 
 slidesContainer.addEventListener('input', getValueFromInput);
 

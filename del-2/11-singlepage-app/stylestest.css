@@ -7,7 +7,8 @@ TABLE OF CONTENT
 
 :root {
     --main-bg-color: rgb(42, 105, 81); 
-    --change-color: red;
+	--change-color: red;
+	--footer-start-position: 0;
 }
 
 .body {
@@ -29,6 +30,8 @@ TABLE OF CONTENT
 	position: absolute;
 	top: 80px;
 	left: 0;
+	/* padding-bottom replaces footer-margin */
+	/* padding-bottom: 2.5rem; */
 }
 
 /* -------------- CLASSES ------------------- */
@@ -36,11 +39,13 @@ TABLE OF CONTENT
 
 
 /* vigtigt at den tager alle underside */
-.collapse > * {
+.collapse {
 	/* display: none; */
 	opacity: 0;
 	transition: none;
 	height: 0px;
+	/* overflow: hidden er vigtig her */
+	overflow: hidden;
 }
 
 /* skjuler siderne */
@@ -82,9 +87,17 @@ TABLE OF CONTENT
 	}
 } 
 
+/* ------------------- FOOTER -------------------- */
 
+.footer {
+	display: none;
+}
 
-
+.footer-position {
+	display: block;
+	position: absolute;
+	top: var(--footer-start-position);
+}
 
 
 /*---------------------------------------------------

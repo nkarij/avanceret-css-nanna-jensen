@@ -9,6 +9,8 @@
 let linkArray = document.querySelectorAll(".nav-item");
 let pageArray = document.querySelectorAll(".pagewrapper");
 let navigationElement = document.querySelector(".navigation");
+let root = document.documentElement;
+let footerElement = document.querySelector("#footer");
 // let index = 0;
 // reference til index
 let onPageLoadIndex = 0;
@@ -24,13 +26,16 @@ function runOnPageLoad(index){
     // klasser fjernes/tilføjes
     pageArray[index].classList.remove("collapse");
     pageArray[index].classList.remove("fade-out");
+    // footerImport kan først kaldes når klasserne er tilføjet
+    importFooter(pageArray[index]);
 }
 
 // event på menuen, som preloader min updatefunction
-navigationElement.addEventListener('mouseover', function(){
+navigationElement.addEventListener('mouseenter', function(){
     updatePagesOnClick();
-    console.log("muse-event");
+    // console.log("muse-event");
 })
+
 
 // funktion som looper 2 arrays på samme tid
 function updatePagesOnClick(){
@@ -49,9 +54,12 @@ function updatePagesOnClick(){
 
             // viser featured page
             if(page.classList.contains("collapse")){
-                console.log("collapse")
+                // console.log("collapse")
                 page.classList.remove("collapse");
             }        
+
+            // kalder footer-funktionen, sender siden med
+            importFooter(page);
 
             // sørger for at siden fader ind
             page.classList.remove("fade-out");
@@ -59,6 +67,7 @@ function updatePagesOnClick(){
 
             // kalder functionen, som skal lytte på animation-end
             animationEnd();
+          
         })
     }
 }
@@ -89,6 +98,47 @@ function hidePages(){
         page.classList.remove("fade-in");
     }
 }
+
+
+// -------------------- FOOTER ------------------
+
+
+
+function importFooter(pageinstance){
+
+    // hent sidens position-bund (pageinstance)
+    let pagePositionFromTop = pageinstance.offsetTop;
+    // hent sidens højde
+    let pageHeight = pageinstance.offsetHeight;
+    let footerStartPosition = pagePositionFromTop + pageHeight;
+    // console.log(footerStartPosition + "px");
+
+    // skift variablens værdi ud med footers startposition
+    root.style.setProperty('--footer-start-position', footerStartPosition + "px");
+    // NB selve positions-klassen tilføjes først under fetchen
+
+
+    // IMPORTER FOOTEREN med en fetch/text
+    fetch("footer.html")
+    // mellem-then() skal altid skrives på denne/samme måde
+    .then((response)=>{
+        // console.log(response);
+        return response.text();
+    })
+    .then((footer)=>{
+        // console.log(footer);
+        let footerContent = footer;
+        
+        // tilføj positionclass til footer-elementet
+        footerElement.classList.add("footer-position");
+        // overskriv footers innerHTML
+        footerElement.innerHTML = footerContent;
+    });
+
+}
+
+
+
 
 
 

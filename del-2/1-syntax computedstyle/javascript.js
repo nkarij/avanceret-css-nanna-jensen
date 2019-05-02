@@ -3,8 +3,8 @@ TABLE OF CONTENT
 ----------------------------------------------------*/
 // alert("hej");
 
-let button = document.querySelector("button");
-button.addEventListener('click', function(){
+let buttonChangeColor = document.querySelector("button");
+buttonChangeColor.addEventListener('click', function(){
 
     // -------- VERSION 1 -------- //
     // change css custom-property/css-variable in root pseudo-element

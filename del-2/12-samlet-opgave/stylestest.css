@@ -1,0 +1,247 @@
+/*---------------------------------------------------
+TABLE OF CONTENT 
+----------------------------------------------------*/
+
+/* STYLES
+------------------------------------*/
+
+:root {
+    --main-bg-color: rgb(42, 105, 81); 
+    --change-color: red;
+
+    /* opgave 2 */
+    --font-normal: 13px;
+    --font-large: 25px;
+    --font-size: var(--font-normal);
+
+    /* opgave 3 */
+	--box-color: white;
+	
+	/* opgave 4 */
+	--animate-box-color: 
+
+    /* opgave 5 */
+    --color-1: blue;
+    /* --slider modtager en variabel værdi fra rangeslider via JS */
+    --slider: 0;
+    /* --add tilføjer en enhed til sliderens variable værdi, fx 1% eller 1px   */
+    --add: calc(var(--slider) * 3px);
+    /* margin-small og large styrer placeringen af boxene på siden */
+    --margin-small: 100px;
+    --margin-large: 400px;
+    --div1: var(--add);
+    --div2: calc(var(--margin-small) + var(--add)); 
+    --div3: calc(var(--margin-large) - var(--margin-small) - var(--add));
+    --div4: calc(var(--margin-large) - var(--add));
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* opgave 1 */
+#change-color-div__div {
+    background-color: var(--main-bg-color);
+}
+
+#div2 {
+    background-color: var(--main-bg-color);
+}
+
+
+/* opgave 2 */
+
+#font-size-test-element {
+    font-size: var(--font-size);
+}
+
+
+/* opgave 3 */
+
+#color-buttons button {
+	margin-bottom: 20px;
+	height: 30px;
+	width: 30px;
+	font-size: 13px;
+	border: 1px solid #888;
+}
+
+#color-button-1 {
+    background-color: red;
+}
+
+#color-button-2 {
+    background-color: green;
+}
+
+#color-button-3 {
+    background-color: blue;
+}
+
+#chosen-color-instance-1 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #888;
+	background-color: var(--box-color);
+	margin-bottom: 20px;
+}
+
+#chosen-color-instance-2 {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #888;
+	background-color: var(--box-color);
+}
+
+
+/* OPGAVE 4 */
+
+#testcolor {
+	width: 180px;
+	height: 180px;
+	background-color: var(--animate-box-color);
+}
+
+
+/* opgave 5 */
+
+/* ------------------------------------------------------------------------ */
+/* NB DETTE ER PARENT CONTAINER FOR DE NÆSTE MANGE SEKTIONER */
+/* DEN STYRER RÆKKEFØLGEN PÅ SIDEN MED POSITION. IKKE SÆRLIG SMART... */
+/* NÅR JEG FÅR TID BØR JEG LAVE EN FUNKTION SOM SELV KAN UDREGNE */
+/* HVOR NÆSTE SEKTION AF SIDEN STARTER */
+
+#page-divide-1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#progressbar-section {
+    position: absolute;
+    top: 450px;
+}
+
+#simpel-parallax-section {
+    position: absolute;
+    top: 1500px;
+}
+
+#advanced-parallax {
+    position: absolute;
+    top: 2900px;
+}
+
+#single-page-app {
+    position: absolute;
+    top: 3500px;
+}
+
+/* NB I MIN EGEN VERSION VAR DER IKKE NOGEN DISTANCE SLIDER */
+/* DENNE ER KOMMET TIL I ADYS VERSION */
+
+#distance-slider, #sliderdistancelabel {
+    display: none;
+}
+
+
+#animation-box-container div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#animation-box-1 {
+    background-color: var(--main-bg-color); 
+    top: var(--margin-small);
+    left: var(--div1);
+}
+
+#animation-box-2 {
+    background-color: blue;
+    top: var(--div2);
+    left: calc(var(--margin-large) - var(--margin-small));
+}
+
+#animation-box-3 {
+    background-color: magenta;
+    top: var(--margin-large);
+    left: var(--div3);
+}
+
+#animation-box-4 {
+    background-color: green;
+
+    top: var(--div4);
+}
+
+/* opgave 6 */
+
+/* SE HTML  */
+
+/* Opgave 7 */
+
+
+/* style the elements size */
+progress {
+    height: 20px;
+    width: 250px;
+    display: block;
+    /* resets the default progress css */
+    -webkit-appearance: none;
+    border: none;
+    background-color: antiquewhite;
+}
+
+/* style the background */
+progress[value]::-webkit-progress-bar {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/* pas på med ikke at bruge pseudoclass progress-inner-value her,  */
+progress[value]::-webkit-progress-value {
+    background: blue;
+    /* background-image: linear-gradient(to right, #1767de, #009bff, #00c1db, #00dd85, #a8eb12); */
+    border-radius: 5px;
+}
+
+
+
+
+
+/* opgave 8 */
+
+.heading {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: white;
+}
+
+#parallaxelement {
+    height: 300px;
+    width: 100%;
+    background: url(../../IMG/food/frokost-big.jpg);
+    background-attachment: fixed;
+}
+
+.picture-container {
+    height: 600px;
+    width: 100%;  
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/
